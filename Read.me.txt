@@ -1,0 +1,12 @@
+1. cd C:\Users\Vagelis\Desktop\react\AwesomeProject
+2. npx react-native@latest init AwesomeProject ,create project
+3.  code . ,open the VS 
+4. npm start ,run in VS terminal
+5. npm run android ,run in VS terminal
+
+Tolls
+* react-native run-android or npm start ,run the following from your project folder
+* iOS Simulator: Cmd ⌘ + D (or Device > Shake)
+  Android emulators: Cmd ⌘ + M (macOS) or Ctrl + M (Windows and Linux)
+* https://reactnative.dev/docs
+* Reaload: Double tap R
