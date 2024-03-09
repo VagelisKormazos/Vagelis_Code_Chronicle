@@ -49,8 +49,12 @@ const Screen2: React.FC<Screen2Props> = ({ navigation }) => {
       </View>
 
       <View style={styles.content}>
-        <Text style={styles.textStyle3}>This is my favorite </Text>
-        <Text style={styles.myName}>GitHub Repos:</Text>
+        <Text style={styles.textStyle3}>                This is my favorite </Text>
+        <Text style={styles.myName}>GitHub Repos</Text>
+      </View>
+
+      <View style={styles.labelContainer}>
+        <Text style={styles.textStyle3}> </Text>
       </View>
 
       <View style={styles.labelContainer2}>
@@ -201,23 +205,29 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 10,
+    marginLeft: 10,
+
   },
   labelText1: {
     fontSize: 16,
     color: 'white',
     marginRight: 10,
-    width: 100,
+    width: 190,
+    
   },
-  labelText2: {
-    fontSize: 16,
-    color: 'white',
-    textAlign: 'center',
-  },
+ labelText2: {
+  fontSize: 16,
+  color: 'white',
+  textAlign: 'left',
+   
+},
+
   labelContainer2: {
     flexDirection: 'row',
     alignItems: 'center',
     marginTop: 10,
     backgroundColor: '#132A24',
+    marginLeft: 10,
   },
   buttonContainer: {
     padding: 15,

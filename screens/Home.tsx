@@ -33,6 +33,7 @@ const Screen1: React.FC<Screen1Props> = ({ navigation }) => {
 
   return (
   <View style={styles.container}>
+    
     <View style={styles.content}>
       <Image
         source={require('../icons/me2.png')}

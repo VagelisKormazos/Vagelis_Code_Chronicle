@@ -16,18 +16,6 @@ const Screen3: React.FC<Screen1Props> = ({ navigation }) => {
     navigation.navigate('ScreenHome');
   };
 
-  const openLinkedIn = () => {
-    Linking.openURL('https://www.linkedin.com/in/evangelos-kormazos-853448263/');
-  };
-
-  const openGitHub = () => {
-    Linking.openURL('https://github.com/VagelisKormazos/');
-  };
-
-  const openInstagram = () => {
-    Linking.openURL('https://www.instagram.com/vagelis_kormazos/');
-  };
-
   const openCvPdf = () => {
     const pdfUrl = 'https://example.com/path/to/Resume_Kormazos_Evangelos.pdf';
 
@@ -43,7 +31,7 @@ const Screen3: React.FC<Screen1Props> = ({ navigation }) => {
     <View style={styles.content}>
       <Text style={styles.image}  onPress={openCvPdf}>CV</Text>
       <View style={styles.textContainer}>
-        <Text style={styles.textStyle}>          I'm Vagelis</Text>
+        <Text style={styles.textStyle}>          Vagelis</Text>
         <Text style={styles.myName}>Kormazos</Text>
         <View style={styles.line}></View>
         <Text style={styles.textStyle4}>A Mathematician with</Text>
@@ -121,6 +109,8 @@ paragraph: {
   fontSize: 16,
   color: 'white',
   lineHeight: 24,
+  marginLeft: 10,
+  marginEnd:5
 },
 content: {
   flexDirection: 'row',
@@ -168,7 +158,7 @@ textStyle5: {
 },
 myName: {
   fontSize: 22,
-  color: '#132A24',//or 132A24 64887C 81AEA7
+  color: '#64887C',//or 132A24 64887C 81AEA7
   marginTop: 10,
 },
 image: {
