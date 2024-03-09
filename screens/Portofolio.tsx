@@ -53,55 +53,72 @@ const Screen2: React.FC<Screen2Props> = ({ navigation }) => {
         <Text style={styles.myName}>GitHub Repos</Text>
       </View>
 
-      <View style={styles.labelContainer}>
-        <Text style={styles.textStyle3}> </Text>
+      <View style={styles.labelContainer3}>
+        <Text style={styles.textStyle2}> Click on Labal to view the code.</Text>
       </View>
 
-      <View style={styles.labelContainer2}>
-        <Text style={styles.labelText1}>Car-Game</Text>
-        <Text style={styles.labelText2}>C#/Engineering</Text>
-      </View>
+      <TouchableOpacity onPress={() => Linking.openURL('https://github.com/VagelisKormazos/Car-Game')}>
+        <View style={styles.labelContainer2}>
+          <Text style={styles.labelText1}>Car-Game</Text>
+          <Text style={styles.labelText2}>C#/Engineering</Text>
+        </View>
+      </TouchableOpacity>
   
-      
+      <TouchableOpacity onPress={() => Linking.openURL('https://github.com/VagelisKormazos/SVM-Image-Analysis-')}>
       <View style={styles.labelContainer}>
         <Text style={styles.labelText1}>Image-Analysis</Text>
         <Text style={styles.labelText2}>Python/ML</Text>
       </View>
+      </TouchableOpacity>
 
+      <TouchableOpacity onPress={() => Linking.openURL('https://github.com/VagelisKormazos/BezierSeg-Curves')}>
       <View style={styles.labelContainer2}>
         <Text style={styles.labelText1}>BezierSeg-Curves</Text>
         <Text style={styles.labelText2}>Python/ML</Text>
       </View>
+      </TouchableOpacity>
 
+      <TouchableOpacity onPress={() => Linking.openURL('https://github.com/VagelisKormazos/Audio-Stories')}>
       <View style={styles.labelContainer}>
         <Text style={styles.labelText1}>Audio-Stories</Text>
         <Text style={styles.labelText2}>Java/Android</Text>
       </View>
+      </TouchableOpacity>
 
+      <TouchableOpacity onPress={() => Linking.openURL('https://github.com/VagelisKormazos/Personal-Assistant-')}>
       <View style={styles.labelContainer2}>
         <Text style={styles.labelText1}>Personal-Assistant</Text>
         <Text style={styles.labelText2}>C#/Engineering</Text>
       </View>
+      </TouchableOpacity>
 
+      <TouchableOpacity onPress={() => Linking.openURL('https://github.com/VagelisKormazos/GunSimulator')}>
       <View style={styles.labelContainer}>
         <Text style={styles.labelText1}>GunSimulator</Text>
         <Text style={styles.labelText2}>C#/Engineering</Text>
       </View>
+      </TouchableOpacity>
 
+      <TouchableOpacity onPress={() => Linking.openURL('https://github.com/VagelisKormazos/A-Star')}>
       <View style={styles.labelContainer2}>
         <Text style={styles.labelText1}>A-Star</Text>
         <Text style={styles.labelText2}>Python</Text>
       </View>
+      </TouchableOpacity>
 
+      <TouchableOpacity onPress={() => Linking.openURL('https://github.com/VagelisKormazos/Tic-Tac-Toe')}>
       <View style={styles.labelContainer}>
         <Text style={styles.labelText1}>Tic-Tac-Toe</Text>
         <Text style={styles.labelText2}>Java/Android</Text>
       </View>
+      </TouchableOpacity>
 
+      <TouchableOpacity onPress={() => Linking.openURL('https://github.com/VagelisKormazos/Personal-Assistant-')}>
       <View style={styles.labelContainer2}>
         <Text style={styles.labelText1}>Personal-Assistant-</Text>
         <Text style={styles.labelText2}>C#/Engineering</Text>
       </View>
+      </TouchableOpacity>
   
      
       <View style={styles.NavContainer}>
@@ -149,7 +166,8 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     textAlign: 'center',
-    marginTop: 10,
+    marginTop: 5,
+    marginBottom:5,
   },
   textStyle3: {
     fontSize: 16,
@@ -203,6 +221,11 @@ const styles = StyleSheet.create({
   },
   labelContainer: {
     flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 10,
+    marginLeft: 10,
+  },
+  labelContainer3: {
     alignItems: 'center',
     marginTop: 10,
     marginLeft: 10,
