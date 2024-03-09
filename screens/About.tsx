@@ -28,14 +28,22 @@ const Screen3: React.FC<Screen1Props> = ({ navigation }) => {
     Linking.openURL('https://www.instagram.com/vagelis_kormazos/');
   };
 
+  const openCvPdf = () => {
+    const pdfUrl = 'https://example.com/path/to/Resume_Kormazos_Evangelos.pdf';
+
+    Linking.openURL(pdfUrl)
+        .catch((err) => console.error('Error opening PDF:', err));
+};
+
+  
+
   return (
   <View style={styles.container}>
+   
     <View style={styles.content}>
-      <Image
-        source={require('../icons/me2.png')}
-        style={styles.image} />
+      <Text style={styles.image}  onPress={openCvPdf}>CV</Text>
       <View style={styles.textContainer}>
-        <Text style={styles.textStyle}>Hello, I'm Vagelis</Text>
+        <Text style={styles.textStyle}>          I'm Vagelis</Text>
         <Text style={styles.myName}>Kormazos</Text>
         <View style={styles.line}></View>
         <Text style={styles.textStyle4}>A Mathematician with</Text>
@@ -51,31 +59,24 @@ const Screen3: React.FC<Screen1Props> = ({ navigation }) => {
       <Image source={require('../icons/vb.png')} style={styles.bottomBarImage} />
     </View>
 
-    <Text style={styles.textStyle2}>Who I Am</Text>
-    <Text style={styles.textStyle3}>About My Resume</Text>
+    <Text style={styles.header}></Text> 
+      <Text style={styles.paragraph}>
+        This application was created by Vagelis Kormazos.
+        It aims to provide users with valuable information about his skills and projects.
+        For more information, you can visit his LinkedIn, GitHub, and Instagram profiles.
+      </Text>
+      {/* <Text style={styles.paragraph}>
+      My interests include photography, traveling, jazz guitar, and tennis. I enjoy
+       exploring new places with my camera, immersing myself in various cultures, and 
+       capturing my experiences through the lens. Music is also a significant part of my
+        life; I love playing jazz guitar and exploring the aesthetics of this genre of music.
+         Additionally, tennis keeps me active and rejuvenated, serving as a form of exercise
+         and relaxation simultaneously. These interests enrich my life and keep me active and
+          enthusiastic.
+      </Text> */}
 
-    <View style={styles.labelContainer}>
-      <Text style={styles.labelText1}>Age:</Text>
-      <Text style={styles.labelText2}>33</Text>
-    </View>
-    <View style={styles.labelContainer2}>
-      <Text style={styles.labelText1}>Resident:</Text>
-      <Text style={styles.labelText2}>Greece</Text>
-    </View>
-    <View style={styles.labelContainer}>
-      <Text style={styles.labelText1}>City:</Text>
-      <Text style={styles.labelText2}>Athens</Text>
-    </View>
-    <View style={styles.labelContainer2}>
-      <Text style={styles.labelText1}>Bachelor:</Text>
-      <Text style={styles.labelText2}>Mathimatics</Text>
-    </View>
-    <View style={styles.labelContainer}>
-      <Text style={styles.labelText1}>Master:</Text>
-      <Text style={styles.labelText2}>Cοmputer Science</Text>
-    </View>
 
-    <View style={styles.buttonContainer}>
+    {/* <View style={styles.buttonContainer}>
       <TouchableOpacity style={styles.button} onPress={openLinkedIn}>
         <Image source={require('../icons/btn_linkedin.png')} style={styles.image2} />
       </TouchableOpacity>
@@ -85,7 +86,7 @@ const Screen3: React.FC<Screen1Props> = ({ navigation }) => {
       <TouchableOpacity style={styles.button} onPress={openInstagram}>
         <Image source={require('../icons/btn_instagram.png')} style={styles.image2} />
       </TouchableOpacity>
-    </View>
+    </View> */}
 
     <View style={styles.NavContainer}>
     <View style={styles.NavBar}>
@@ -109,6 +110,17 @@ container: {
   flex: 1,
   backgroundColor: 'black',
   paddingTop: 10,
+},
+header: {
+  fontSize: 24,
+  color: '#64887C',
+  fontWeight: 'bold',
+  marginBottom: 10,
+},
+paragraph: {
+  fontSize: 16,
+  color: 'white',
+  lineHeight: 24,
 },
 content: {
   flexDirection: 'row',
@@ -156,14 +168,17 @@ textStyle5: {
 },
 myName: {
   fontSize: 22,
-  color: '#64887C',//or 132A24 64887C 81AEA7
+  color: '#132A24',//or 132A24 64887C 81AEA7
   marginTop: 10,
 },
 image: {
-  width: 180,
-  height: 200,
+  textAlign: 'center',
+  width: 170,
+  height: 170,
   borderRadius: 10,
   resizeMode: 'cover',
+  color: '#132A24',
+  fontSize: 90,
 },
 line: {
   borderBottomColor: '#64887C',

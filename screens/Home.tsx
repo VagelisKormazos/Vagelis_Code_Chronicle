@@ -9,6 +9,7 @@ interface Screen1Props {
 }
 
 const Screen1: React.FC<Screen1Props> = ({ navigation }) => {
+  
   const goToScreen2 = () => {
     navigation.navigate('ScreenPortofolio');
   };
@@ -28,6 +29,7 @@ const Screen1: React.FC<Screen1Props> = ({ navigation }) => {
   const openInstagram = () => {
     Linking.openURL('https://www.instagram.com/vagelis_kormazos/');
   };
+  
 
   return (
   <View style={styles.container}>
@@ -104,6 +106,7 @@ const Screen1: React.FC<Screen1Props> = ({ navigation }) => {
   </View>
   );
  }
+ 
 
 const styles = StyleSheet.create({
 container: {

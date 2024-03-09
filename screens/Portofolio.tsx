@@ -33,18 +33,13 @@ const Screen2: React.FC<Screen2Props> = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
-        <Image
-          source={require('../icons/me2.png')}
-          style={styles.image} />
-        <View style={styles.textContainer}>
-          <Text style={styles.textStyle}>Hello, I'm Vagelis</Text>
-          <Text style={styles.myName}>Kormazos</Text>
-          <View style={styles.line}></View>
-          <Text style={styles.textStyle4}>A Mathematician with</Text>
-          <Text style={styles.textStyle5}> love in computer science</Text>
-        </View>
+        <Text style={styles.textStyle3}>  " Any sufficiently advanced technology is</Text>
       </View>
-  
+      <View style={styles.content}>
+        <Text style={styles.textStyle3}>indistinguishable from magic. " </Text>
+        <Text style={styles.myName}>- Arthur C. Clarke</Text>
+      </View>
+      
       <View style={styles.bottomBar}>
         <Image source={require('../icons/C.png')} style={styles.bottomBarImage} />
         <Image source={require('../icons/java.png')} style={styles.bottomBarImage} />
@@ -52,43 +47,59 @@ const Screen2: React.FC<Screen2Props> = ({ navigation }) => {
         <Image source={require('../icons/react.png')} style={styles.bottomBarImage} />
         <Image source={require('../icons/vb.png')} style={styles.bottomBarImage} />
       </View>
-  
-      <Text style={styles.textStyle2}>Who I Am</Text>
-      <Text style={styles.textStyle3}>About My Resume</Text>
-  
-      <View style={styles.labelContainer}>
-        <Text style={styles.labelText1}>Age:</Text>
-        <Text style={styles.labelText2}>33</Text>
+
+      <View style={styles.content}>
+        <Text style={styles.textStyle3}>This is my favorite </Text>
+        <Text style={styles.myName}>GitHub Repos:</Text>
       </View>
+
       <View style={styles.labelContainer2}>
-        <Text style={styles.labelText1}>Resident:</Text>
-        <Text style={styles.labelText2}>Greece</Text>
+        <Text style={styles.labelText1}>Car-Game</Text>
+        <Text style={styles.labelText2}>C#/Engineering</Text>
       </View>
+  
+      
       <View style={styles.labelContainer}>
-        <Text style={styles.labelText1}>City:</Text>
-        <Text style={styles.labelText2}>Athens</Text>
+        <Text style={styles.labelText1}>Image-Analysis</Text>
+        <Text style={styles.labelText2}>Python/ML</Text>
       </View>
+
       <View style={styles.labelContainer2}>
-        <Text style={styles.labelText1}>Bachelor:</Text>
-        <Text style={styles.labelText2}>Mathimatics</Text>
+        <Text style={styles.labelText1}>BezierSeg-Curves</Text>
+        <Text style={styles.labelText2}>Python/ML</Text>
       </View>
+
       <View style={styles.labelContainer}>
-        <Text style={styles.labelText1}>Master:</Text>
-        <Text style={styles.labelText2}>Cοmputer Science</Text>
+        <Text style={styles.labelText1}>Audio-Stories</Text>
+        <Text style={styles.labelText2}>Java/Android</Text>
+      </View>
+
+      <View style={styles.labelContainer2}>
+        <Text style={styles.labelText1}>Personal-Assistant</Text>
+        <Text style={styles.labelText2}>C#/Engineering</Text>
+      </View>
+
+      <View style={styles.labelContainer}>
+        <Text style={styles.labelText1}>GunSimulator</Text>
+        <Text style={styles.labelText2}>C#/Engineering</Text>
+      </View>
+
+      <View style={styles.labelContainer2}>
+        <Text style={styles.labelText1}>A-Star</Text>
+        <Text style={styles.labelText2}>Python</Text>
+      </View>
+
+      <View style={styles.labelContainer}>
+        <Text style={styles.labelText1}>Tic-Tac-Toe</Text>
+        <Text style={styles.labelText2}>Java/Android</Text>
+      </View>
+
+      <View style={styles.labelContainer2}>
+        <Text style={styles.labelText1}>Personal-Assistant-</Text>
+        <Text style={styles.labelText2}>C#/Engineering</Text>
       </View>
   
-      <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button} onPress={openLinkedIn}>
-          <Image source={require('../icons/btn_linkedin.png')} style={styles.image2} />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={openGitHub}>
-          <Image source={require('../icons/btn_github.png')} style={styles.image2} />
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button} onPress={openInstagram}>
-          <Image source={require('../icons/btn_instagram.png')} style={styles.image2} />
-        </TouchableOpacity>
-      </View>
-  
+     
       <View style={styles.NavContainer}>
       <View style={styles.NavBar}>
           <TouchableOpacity >
@@ -158,7 +169,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   myName: {
-    fontSize: 22,
+    fontSize: 15,
     color: '#64887C',//or 132A24 64887C 81AEA7
     marginTop: 10,
   },
