@@ -10,10 +10,10 @@ interface Screen1Props {
 
 const Screen3: React.FC<Screen1Props> = ({ navigation }) => {
   const goToScreen2 = () => {
-    navigation.navigate('ScreenPortofolio');
+    navigation.navigate('Portofolio');
   };
   const goToScreen1 = () => {
-    navigation.navigate('ScreenHome');
+    navigation.navigate('Home');
   };
 
   const openCvPdf = () => {

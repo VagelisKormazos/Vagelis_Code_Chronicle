@@ -10,11 +10,11 @@ interface Screen2Props {
 
 const Screen2: React.FC<Screen2Props> = ({ navigation }) => {
   const goToScreen1 = () => {
-    navigation.navigate('ScreenHome');
+    navigation.navigate('Home');
   };
 
   const goToScreen3 = () => {
-    navigation.navigate('ScreenAbout');
+    navigation.navigate('About');
   };
 
   

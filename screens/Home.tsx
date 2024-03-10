@@ -11,11 +11,11 @@ interface Screen1Props {
 const Screen1: React.FC<Screen1Props> = ({ navigation }) => {
   
   const goToScreen2 = () => {
-    navigation.navigate('ScreenPortofolio');
+    navigation.navigate('Portofolio');
   };
 
   const goToScreen3 = () => {
-    navigation.navigate('ScreenAbout');
+    navigation.navigate('About');
   };
 
   const openLinkedIn = () => {

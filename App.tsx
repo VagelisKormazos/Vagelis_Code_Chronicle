@@ -12,7 +12,7 @@ const App = () => {
   return(
     <NavigationContainer>
       <Stack.Navigator 
-        initialRouteName="ScreenHome"
+        initialRouteName="Home"
         screenOptions={{
           headerStyle: {
             backgroundColor: 'black', // Ορίστε το επιθυμητό χρώμα φόντου εδώ
@@ -24,9 +24,9 @@ const App = () => {
           },
           
         }}>
-        <Stack.Screen name="ScreenHome" component={ScreenHome} />
-        <Stack.Screen name="ScreenPortofolio" component={ScreenPortofolio} />
-        <Stack.Screen name="ScreenAbout" component={ScreenAbout} />
+        <Stack.Screen name="Home" component={ScreenHome} />
+        <Stack.Screen name="Portofolio" component={ScreenPortofolio} />
+        <Stack.Screen name="About" component={ScreenAbout} />
       </Stack.Navigator>
     </NavigationContainer>
   );
