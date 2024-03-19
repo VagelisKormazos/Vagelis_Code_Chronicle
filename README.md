@@ -3,7 +3,7 @@
 This is a React Native application showcasing my portfolio. It includes information about me, my skills, projects, and contact details. The app is built using React Native, TypeScript, and various other libraries.
 
 ## Screenshots
-![Uploading Home.jpg…]()
+![Home](https://github.com/VagelisKormazos/Vagelis_Code_Chronicle/assets/100516014/2dac3cbc-2a2e-4c11-8849-c14a5025a6a3)
 
 ## Features
 
